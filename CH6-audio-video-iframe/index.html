@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hmtl media</title>
+  </head>
+  <body>
+    <div>
+      <!-- 
+      audio
+      -->
+      <!-- first example -->
+      <audio controls src="./asset/audio.mp3"></audio>
+      <a href="./asset/audio.mp3"> Download audio </a>
+      <div>
+        <!-- seccond example -->
+        <audio controls>
+          <source src="./asset/audio.mp3" type="audio/mpeg" />
+          <source src="./asset/audio.wav" type="audio/wav" />
+          <source src="./asset/audio.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <!-- 
+    video
+    -->
+    <video
+      src="./asset/The Universe in a Nutshell.mkv"
+      controls
+      autoplay
+      loop
+      muted
+      poster="./asset/image.jpeg"
+      width="320"
+      height="150"
+    >
+      Your browser does not support the video tag.
+    </video>
+    <!-- src: Specifies the URL of the video file.
+    controls: Adds playback controls like play, pause, volume, and full screen.
+    autoplay: Starts playing the video automatically when the page loads.
+    loop: Replays the video when it reaches the end.
+    muted: Mutes the video by default.
+    poster: Specifies an image to show while the video is  -->
+    <div>
+      <video controls width="400">
+        <source src="./asset/The Universe in a Nutshell.mkv" type="video/mp4" />
+        <source
+          src="./asset/The Universe in a Nutshell.webm"
+          type="video/webm"
+        />
+        <source src="./asset/The Universe in a Nutshell.ogv" type="video/ogg" />
+        Your browser does not support the video element.
+      </video>
+    </div>
+
+    <!-- 
+    iframe
+     -->
+    <h2>Embedded HTML Page</h2>
+    <p>Here, we're embedding an HTML page from "https://www.example.com".</p>
+    <iframe
+      src="./asset/iframe-example.html"
+      width="600"
+      height="400"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    >
+    </iframe>
+    <iframe
+      src="https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=159651196451&hvpone=&hvptwo=&hvadid=675114638556&hvpos=&hvnetw=g&hvrand=13584266883355009723&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060971&hvtargid=kwd-10573980&hydadcr=2246_13649807&gad_source=1"
+      width="600"
+      height="400"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+    >
+    </iframe>
+
+    <!-- src: The URL of the page to embed (https://www.example.com).
+        width and height: The dimensions of the iframe (600 and 400 pixels).
+        frameborder: Sets the border width around the iframe. 0 means no border.
+        allowfullscreen: Allows the iframe content to be displayed in fullscreen mode.
+        loading: Controls the loading behavior. lazy defers loading until the iframe is near the viewport. -->
+
+    <h2>Embedded YouTube Video</h2>
+
+    <iframe
+      src="https://www.youtube.com/watch?v=Tc-EQAgL3lI"
+      width="560"
+      height="315"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy"
+    >
+    </iframe>
+    <!-- src: The YouTube video URL (https://www.youtube.com/watch?v=UcPX3G9FPec&t=787s). The embed part is crucial for embedding.
+    width and height: Specifies the video dimensions (560 by 315 pixels).
+    frameborder: No border around the video (0).
+    allow: Provides permissions to the iframe content, enabling features like autoplay and fullscreen.
+    allowfullscreen: Allows the video to be viewed in fullscreen mode.
+    loading: lazy attribute to defer loading until necessary. -->
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094286!2d144.95373631531656!3d-37.81627917975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57792cc2d12b25b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1616539527497!5m2!1sen!2sau"
+      width="300"
+      height="225"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen
+      loading="lazy"
+    >
+    </iframe>
+    <!-- src: The URL to embed a Google Map, including query parameters for location and display options. -->
+    <!-- width and height: Dimensions of the map (600 by 450 pixels). -->
+    <!-- frameborder: Sets the border width to 0 (no border). -->
+    <!-- style="border:0;": Inline CSS to ensure no border is shown. -->
+    <!-- allowfullscreen: Allows the map to be viewed in fullscreen mode. -->
+    <!-- loading: lazy attribute to defer map loading. -->
+  </body>
+</html>
