@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding ensures special characters (e.g., ü, é) display correctly -->
+    <meta charset="UTF-8" />
+    <!-- Responsive design for making the web page adjust to different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures compatibility with Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>Basics of HTML</title>
+    <!-- Description helps search engines understand the page content -->
+    <meta name="description" content="This is a description of the web page" />
+    <!-- Keywords help search engines rank the page for specific searches -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <!-- Specifies the author's name -->
+    <meta name="author" content="Abdul Rahman" />
+
+    <!-- 
+    - favicon
+  -->
+    <!-- Sets a small icon to represent the web page in the browser tab -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- 
+    - custom css link
+  -->
+    <!-- Links an external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <!-- Preloads images to make them load faster -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+
+    <!-- 
+    - google font link
+  -->
+    <!-- Links to Google Fonts for custom typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 
+      html Basic tags 
+       -->
+
+    <!-- Heading tags are used for headings and have different levels from 1 (largest) to 6 (smallest) -->
+    <h1>heading1</h1>
+    <h2>heading2</h2>
+    <h3>heading3</h3>
+    <h4>heading4</h4>
+    <h5>heading5</h5>
+    <h6>heading6</h6>
+
+    <!-- Paragraph tags are used to add blocks of text content -->
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+      consequuntur obcaecati mollitia? Deleniti animi minus nulla odio, hic
+      tempore corporis ex a pariatur iure error dolorem, ipsum repellat. Illo,
+      natus.
+    </p>
+
+    <!-- Line break tag (<br>) is used for line breaks but not preferred for layout -->
+    <p>First line.<br />Second line.</p>
+
+    <!-- Horizontal rule (<hr>) adds a horizontal line to separate content -->
+    <hr />
+
+    <!-- Preformatted Text (<pre>) preserves spacing and line breaks -->
+    <pre>
+        This text
+        will keep
+        its formatting.  like this 
+    </pre>
+    <pre>
+        # A simple Python program to print "Hello, World!"
+    <code> 
+      def main():
+          print("Hello, World!")
+      
+      if __name__ == "__main__":
+          main()
+    </code>
+    </pre>
+
+    <!-- 
+    Inline vs Block Elements
+    -->
+
+    <!-- Inline elements stay within the same line, such as images or text styles -->
+    <img src="image1.png" alt="" width="100px" />
+    <img src="image2.jpeg" alt="" width="100px" />
+
+    <!-- Block elements take up the full width, starting on a new line -->
+    <h1>Lorem ipsum dolor sit.</h1>
+
+    <!-- 
+    div and span 
+   -->
+
+    <!-- Span is used for styling or highlighting specific text inline -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates autem
+      odio deleniti ab, eos tenetur doloremque natus magni.
+      <span style="background-color: blue">Perferendis autem </span>provident
+      totam ipsa recusandae cupiditate dicta voluptate voluptatibus vel aliquid.
+    </p>
+    <!-- Div is used to group content together, like a container -->
+    <div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta qui
+        pariatur odit cupiditate consequatur ducimus nam ea. Animi modi
+        excepturi ullam magni cum nihil odio, qui, nulla est recusandae facilis!
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id,Classes&formatting tags</title>
+    <style>
+      /* CSS: Styling an element with a specific ID */
+      #unique-element {
+        color: blue;
+      }
+      /* CSS: Styling all elements with a specific class */
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Unique ID used to style this specific element. Each ID should be unique in the entire document -->
+      <p id="unique-element">This paragraph has a unique ID.</p>
+      <!-- Class used to apply styles to multiple elements. Unlike IDs, classes can be reused across many elements -->
+      <p class="highlight">This paragraph is highlighted.</p>
+      <p>This paragraph is not highlighted.</p>
+      <p class="highlight">This paragraph is also highlighted.</p>
+    </div>
+    <div>
+      <hr />
+      <!--
+		formatting tags  
+	 -->
+      <!-- Preformatted text preserves spacing and alignment exactly as written in the HTML. Use for code or text examples -->
+      <pre>
+  this is pre 
+        formatting text 
+      </pre>
+      <!-- Blockquote tag used to represent a long quote or citation. Adding the "cite" attribute gives credit to the source -->
+      <blockquote cite="www.w3schools.com">
+        <!-- copy text from another cite  -->
+        HTML HTML is the standard markup language for Web pages. With HTML you
+        can create your own Website. HTML is easy to learn - You will enjoy it!
+      </blockquote>
+      <!-- Quotation tag for inline quotes within a paragraph -->
+      <p>
+        WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+      </p>
+      <!-- code , abbrivation and acronyme tag -->
+      <!-- Displays inline code snippets. Use the <code> tag for small pieces of code inside a text -->
+      <p>Use the <code>print()</code> function to output text in Python.</p>
+      <!-- Abbreviation tag displays full text on hover. The "title" attribute is required for the full meaning -->
+      <p>
+        The <abbr title="World Health Organization">WHO</abbr> provides global
+        health leadership.
+      </p>
+      <p>
+        The <abbr title="Uniform Resource Locator">URL</abbr> of a website
+        should be user-friendly.
+      </p>
+      <!-- <abbr> Abbreviation -->
+    </div>
+    <hr />
+    <!-- 
+	text formatting tags
+	 -->
+
+    <!-- text formatting tags , note we prefer strong and emphasize tag intead of bold and italic for semantic meaning -->
+    <p>this is normal text</p>
+    <p>this is <strong>strong text</strong></p>
+    <b>this is bold text</b>
+    <em>this is emphasize text</em>
+    <p><i>this is italic text</i></p>
+    <!-- usefull for writing mathematical and chemical equations -->
+    <p>this is<sub> subscrit text</sub></p>
+    <p>this is<sup> supercript text</sup></p>
+    <!-- Highlighting additions and deletions in text -->
+    <p>This is an <ins>inserted</ins> word.</p>
+    <p><del>this is deleted text</del></p>
+    <!-- Mark text is useful for drawing attention to specific parts -->
+    <p><mark> is mark text</mark></p>
+    <p><u>this is underlined text</u></p>
+    <p><big>this is big text</big></p>
+    <p><small>this is small text</small></p>
+    <p>this is <tt>monospace</tt></p>
+  </body>
+</html>
