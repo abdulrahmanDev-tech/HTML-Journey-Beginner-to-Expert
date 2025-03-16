@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>images and anchor</title>
+  </head>
+  <body>
+    <div>
+      <!-- 
+		image tag
+		 -->
+
+      <img src="images/download.png" alt="amazon" width="200" />
+
+      <figure>
+        <img src="images/download.png" alt="An image" width="150" />
+        <figcaption>This is a caption of above image.</figcaption>
+      </figure>
+      <br />
+      <br />
+      <!-- 
+	  anchor tag
+	   -->
+
+      <!-- how to create hyperlinks  -->
+      <a href="https://www.facebook.com">facebook</a><br />
+
+      <a
+        href="https://www.facebook.com"
+        target="_blank"
+        title="goes to facebook"
+        >facebook</a
+      >
+      <!-- target="_self/_parent/_top/_blank" -->
+
+      <br />
+
+      <!-- 
+	  clickable images
+	   -->
+      <br />
+      <a href="http://www.amazon.com"
+        ><img src="images/download.png" alt="amazon" width="150" /></a
+      ><br />
+
+      <!-- 
+	  to send email
+	   -->
+      <a href="mailto:abdulrahman671078@gmail.com">my gmail</a>
+    </div>
+    <hr />
+    <!-- 
+	file path of an image, absolute vs relative
+	 -->
+
+    <!-- Definition: A relative path specifies the location of a file in relation to the location of the current file. -->
+    <div style="background-color: bisque">
+      <!-- Same Directory: If the file you are linking to is in the same folder as the current file use name.Jpeg/png or /name.jpeg etc -->
+      <img src="image.jpeg" alt="amazon" width="200" />
+      <!-- Subfolder: If the file is in a folder within the same directory  use foldername/image.jpeg or ./foldername/image.jpej-->
+      <img src="images/favicon.png" alt="" />
+      <!-- Parent Directory: If the file is in a directory above the current one. -->
+      <img src="../image/image copy.jpeg" alt="image" width="200" />
+    </div>
+    <div style="background-color: aqua">
+      <!--------------- 
+      absolte file path
+       ---------------->
+      <!-- in a brower , slect image right click open in new tab and copy the link -->
+      <img
+        src="https://media.istockphoto.com/id/1645602428/photo/perfect-light-purple-and-pink-dahlia-enlarged-isolated-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Ie5-mXtynEFv_jaxS3fAzry7ZdEo88FJOrhlxMXoiiw="
+        alt="image"
+        width="300"
+      />
+      <!-- in vs code slect the image then right click and copy path adress -->
+      <img
+        src="F:\web dev projects\html\Screenshot 2024-06-08 233704.png"
+        alt="imaeg"
+      />
+    </div>
+  </body>
+</html>
